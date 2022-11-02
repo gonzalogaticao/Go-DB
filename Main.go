@@ -39,7 +39,11 @@ func main() {
 	/*--- Guardar informacion en BD.--- */
 
 	//2.-Imprimir Instrucicciones.
+	/*--- Extraer informacion en BD.--- */
+
 	//3.-Realizar preguntas.
+	/*--- Extraer informacion en BD.--- */
+
 	//4.-Obtener respuestas.
 	var answers [10]int
 	var i int
@@ -54,6 +58,7 @@ func main() {
 			i--
 		}
 	}
+	/*--- Guardar informacion en BD.--- */
 
 	//5.-Calcular resultados.
 	var result int
