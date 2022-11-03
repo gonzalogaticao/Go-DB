@@ -6,6 +6,7 @@ import (
 
 func main() {
 	//1.-Recibir al participante.
+	fmt.Println("TITULO")
 	fmt.Println("Inicio del cuestionario")
 
 	var day int
@@ -46,13 +47,13 @@ func main() {
 
 	//4.-Obtener respuestas.
 	var answers [10]int
-	var i int
 	var num int
+	var i int
 
 	for i = 0; i < 10; i++ {
 		fmt.Printf("Respuesta de pregunta (%v): ", i+1)
 		fmt.Scanln(&num)
-		if num >= 0 && num <= 5 {
+		if num >= 1 && num <= 3 {
 			answers[i] = num
 		} else {
 			i--
@@ -67,6 +68,7 @@ func main() {
 	}
 	/*--- Guardar informacion en BD.--- */
 
+	//6.-Mostrar resultados.
 	fmt.Printf("El resultado es: %v\n", result)
 	if result < 20 {
 		fmt.Printf("Participante %v %v se encuentra en buen estado.\n", name, lastName)
@@ -81,6 +83,6 @@ func main() {
 		fmt.Printf("Participante %v %v se le diagnostica depresion.\n", name, lastName)
 	}
 
-	//6.-Cerrar y finalizar.
+	//7.-Cerrar y finalizar.
 	fmt.Println("FIN.")
 }
