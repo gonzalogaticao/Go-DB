@@ -70,16 +70,16 @@ func main() {
 
 	//6.-Mostrar resultados.
 	fmt.Printf("El resultado es: %v\n", result)
-	if result < 20 {
+	if result < 10 {
 		fmt.Printf("Participante %v %v se encuentra en buen estado.\n", name, lastName)
 	}
-	if result >= 20 && result <= 30 {
+	if result >= 10 && result <= 20 {
 		fmt.Printf("Participante %v %v se encuentra en condicion estable.\n", name, lastName)
 	}
-	if result > 30 && result <= 40 {
+	if result > 20 && result <= 25 {
 		fmt.Printf("Participante %v %v requiere atencion.\n", name, lastName)
 	}
-	if result > 40 {
+	if result > 25 {
 		fmt.Printf("Participante %v %v se le diagnostica depresion.\n", name, lastName)
 	}
 
